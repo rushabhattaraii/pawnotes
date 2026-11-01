@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #f6f7f4; color: #1f2a24; }
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 200px; background: #2f5d50; color: #fff; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px; }
+.sidebar a { color: #fff; text-decoration: none; }
+.brand { font-weight: 700; font-size: 20px; }
+.badge { background: #f2b134; color: #1f2a24; border-radius: 10px; padding: 0 8px; margin-left: 6px; }
+main { flex: 1; padding: 24px 32px; max-width: 900px; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e3e6e0; }
+textarea { width: 100%; font: inherit; padding: 10px; }
+.hint { color: #5a6b62; }
+.history { background: #fff; padding: 12px 12px 12px 36px; }
+.history li { padding: 6px 0; border-bottom: 1px solid #eef0ec; }
+.time { color: #5a6b62; margin-right: 12px; font-variant-numeric: tabular-nums; }
