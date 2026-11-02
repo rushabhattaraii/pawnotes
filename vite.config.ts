@@ -11,5 +11,6 @@ const localApi: Plugin = {
 
 export default defineConfig({
   plugins: [react(), localApi],
-  server: { port: 5173, strictPort: true },
+  // Prefer 5173; if it's taken, Vite falls back to the next free port (5174, ...).
+  server: { port: 5173, strictPort: false },
 });
