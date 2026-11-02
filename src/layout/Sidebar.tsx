@@ -10,6 +10,7 @@ export default function Sidebar() {
     const timer = setInterval(() => {
       getUnreadCount().then(setUnread);
     }, 5000);
+    return () => clearInterval(timer);
   }, []);
 
   return (

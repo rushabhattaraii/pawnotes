@@ -26,6 +26,7 @@ export default function NoteEditor() {
       }
     };
     window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, [patientId]);
 
   return (
